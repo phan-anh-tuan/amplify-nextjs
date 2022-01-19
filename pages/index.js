@@ -1,17 +1,21 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+// import Head from "next/head";
+// import styles from "../styles/Home.module.css";
+import Image from "next/image";
+import gorillaPic from "../public/gorilla.jpg";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>My Next.js Amplify app</h1>
-      </main>
-    </div>
+    <>
+      <h1>My Homepage</h1>
+      <Image
+        src={gorillaPic}
+        alt="Picture of the author"
+        // width={500} automatically provided
+        // height={500} automatically provided
+        // blurDataURL="data:..." automatically provided
+        // placeholder="blur" // Optional blur-up while loading
+      />
+      <p>Welcome to my homepage!</p>
+    </>
   );
 }
