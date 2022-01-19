@@ -6,7 +6,7 @@ import gorillaPic from "../public/gorilla.jpg";
 export default function Home() {
   return (
     <>
-      <h1>My Homepage</h1>
+      <h1>Welcome to my homepage!</h1>
       <Image
         src={gorillaPic}
         alt="Picture of the author"
@@ -15,7 +15,6 @@ export default function Home() {
         // blurDataURL="data:..." automatically provided
         // placeholder="blur" // Optional blur-up while loading
       />
-      <p>Welcome to my homepage!</p>
     </>
   );
 }
